@@ -15,12 +15,17 @@ Game_Board::Game_Board (size_t height, size_t width)
 }
 
 void
-Game_Board::print ()
+Game_Board::render ()
 {
 	for (std::vector<Cell_Status> row : m_board)
 	{
 		for (Cell_Status x : row)
-			printf("%i", x);
+		{
+			if (x == Cell_Status::ALIVE)
+				printf("█");
+			else
+				printf(" ");
+		}
 		printf("\n");
 	}
 }

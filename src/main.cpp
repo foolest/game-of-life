@@ -3,9 +3,9 @@
 int
 main ()
 {
-	Game_Board board {5, 5};
+	Game_Board board {20, 40};
 
 	board.init();
 
-	board.print();
+	board.render();
 }

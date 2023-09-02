@@ -17,7 +17,7 @@ class Game_Board
 {
 public:
 	Game_Board (size_t height, size_t width);
-	void print ();
+	void render ();
 	void init ();
 private:
 	size_t m_height;
