@@ -1,7 +1,11 @@
-#include <iostream>
+#include "../include/Game_Board.h"
 
 int
 main ()
 {
-	std::cout << "Hello\n";
+	Game_Board board {5, 5};
+
+	board.init();
+
+	board.print();
 }

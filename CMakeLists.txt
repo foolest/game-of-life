@@ -18,6 +18,7 @@ include_directories(include)
 # Add your source files
 add_executable(game-of-life
     src/main.cpp
+	src/Game_Board.cpp
     # Add any other source files here
 )
 
