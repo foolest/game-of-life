@@ -6,7 +6,7 @@
 int
 main ()
 {
-	Game_Board board {20, 30};
+	Game_Board board {20, 50};
 	
 	board.init_random();
 	board.render();
@@ -14,7 +14,7 @@ main ()
 	{
 		board.next_board(board.get_board());
 		board.render();
-		std::this_thread::sleep_for(std::chrono::milliseconds(300));
+		std::this_thread::sleep_for(std::chrono::milliseconds(100));
 	}
 
 }
